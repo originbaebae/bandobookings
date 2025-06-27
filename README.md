@@ -1,1 +1,1 @@
-# bandobookings
+# BandoBookings – Komplett version med chatt, formulär och mobilvy.

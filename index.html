@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BandoBookings</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <select id="language">
+        <option value="sv">Svenska</option>
+        <option value="en">English</option>
+      </select>
+      <button onclick="alert('AI-assistent kommer snart!')">💬 Chatta med oss</button>
+    </div>
+    <h1>Your place to stay</h1>
+    <img src="bb-logo.png" alt="BandoBookings Logga" style="height: 80px;">
+    <button onclick="document.getElementById('hostForm').style.display='block'">Bli värd</button>
+  </header>
+  <main>
+    <p>Välkommen till BandoBookings – hyr eller hyr ut i hela Sverige!</p>
+    <section id="booking">
+      <h2>Boka boende</h2>
+      <form>
+        <label>Stad: <input type="text" /></label><br />
+        <label>Datum: <input type="date" /></label><br />
+        <label>Antal gäster: <input type="number" min="1" /></label><br />
+        <button type="submit">Sök</button>
+      </form>
+    </section>
+  </main>
+
+  <section id="hostForm" style="display:none;">
+    <h2>Registrera ditt boende</h2>
+    <form>
+      <label>Namn: <input type="text" /></label><br />
+      <label>Adress: <input type="text" /></label><br />
+      <label>Pris per natt: <input type="number" /></label><br />
+      <label>Beskrivning:<br /><textarea></textarea></label><br />
+      <button type="submit">Skicka</button>
+    </form>
+  </section>
+</body>
+</html>
